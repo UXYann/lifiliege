@@ -1,0 +1,1807 @@
+{"Lifi" : [
+	{
+		"idLifi" : 4996,
+		"mapNumber": 1,
+		"coordinates": "506,489",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 1",
+		    "coordOeuvre" : "451,485",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Ttitre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Description 1"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 1-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 1-1",
+						"Legende" : "Legende sous-oeuvre 1-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 1-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 1-2",
+						"Legende" : "Legende sous-oeuvre 1-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi" : 15375,
+		"mapNumber": 2,
+		"coordinates": "435,597",
+		"etage": 1,
+		"parcours": [{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 2",
+		    "coordOeuvre" : "421,629",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Ttitre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Ttitre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 2",
+	          		"legendeImage" : "Legende 2",
+	          		"titreOeuvre" : "Titre 2",
+	          		"DescriptionOeuvre" : "Description 2"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 2-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 2-1",
+						"Legende" : "Legende sous-oeuvre 2-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 2-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 2-2",
+						"Legende" : "Legende sous-oeuvre 2-2"
+				  	}
+				}
+			}]
+		},
+		{
+		    "idOeuvre" : "OEUVRE 3",
+		    "coordOeuvre" : "461,629",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Ttitre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Ttitre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 3",
+	          		"legendeImage" : "Legende 3",
+	          		"titreOeuvre" : "Titre 3",
+	          		"DescriptionOeuvre" : "Description 3"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 3-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 3-1",
+						"Legende" : "Legende sous-oeuvre 3-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 3-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 3-2",
+						"Legende" : "Legende sous-oeuvre 3-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi" : 6977,
+		"mapNumber": 3,
+		"coordinates": "250,705",
+		"etage": 1,
+		"parcours": [{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 4",
+		    "coordOeuvre" : "238,657",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Ttitre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Ttitre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 4",
+	          		"legendeImage" : "Legende 4",
+	          		"titreOeuvre" : "Titre 4",
+	          		"DescriptionOeuvre" : "Desrcripion 4"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 4-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 4-1",
+						"Legende" : "Legende sous-oeuvre 4-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 4-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 4-2",
+						"Legende" : "Legende sous-oeuvre 4-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi" : "WAITING",
+		"mapNumber": 4,
+		"coordinates": "277,858",
+		"etage": 1,
+		"parcours": [{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 5",
+		    "coordOeuvre" : "277,753",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Ttitre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Ttitre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 5",
+	          		"legendeImage" : "Legende 5",
+	          		"titreOeuvre" : "Titre 5",
+	          		"DescriptionOeuvre" : "Desrcripion 5"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 5-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 5-1",
+						"Legende" : "Legende sous-oeuvre 5-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 5-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 5-2",
+						"Legende" : "Legende sous-oeuvre 5-2"
+				  	}
+				}
+			}]
+		},
+		{
+		    "idOeuvre" : "OEUVRE 6",
+		    "coordOeuvre" : "277,788",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Ttitre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Ttitre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 6",
+	          		"legendeImage" : "Legende 6",
+	          		"titreOeuvre" : "Titre 6",
+	          		"DescriptionOeuvre" : "Desrcripion 6"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 6-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 6-1",
+						"Legende" : "Legende sous-oeuvre 6-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 6-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 6-2",
+						"Legende" : "Legende sous-oeuvre 6-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+	{
+		"idLifi" : "WAITING",
+		"mapNumber": "4-BIS",
+		"coordinates": "277,858",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 7",
+		    "coordOeuvre" : "217,815",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Ttitre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Ttitre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 7",
+	          		"legendeImage" : "Legende 7",
+	          		"titreOeuvre" : "Titre 7",
+	          		"DescriptionOeuvre" : "Desrcripion 7"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 7-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 7-1",
+						"Legende" : "Legende sous-oeuvre 7-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 7-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 7-2",
+						"Legende" : "Legende sous-oeuvre 7-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 21275,
+		"mapNumber": 5,
+		"coordinates": "273,980",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 8",
+		    "coordOeuvre" : "224,915",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Ttitre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Ttitre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 8",
+	          		"legendeImage" : "Legende 8",
+	          		"titreOeuvre" : "Titre 8",
+	          		"DescriptionOeuvre" : "Desrcripion 8"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 8-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 8-1",
+						"Legende" : "Legende sous-oeuvre 8-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 8-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 8-2",
+						"Legende" : "Legende sous-oeuvre 8-2"
+				  	}
+				}
+			}]
+		},
+		{
+		    "idOeuvre" : "OEUVRE 9",
+		    "coordOeuvre" : "326,975",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Ttitre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Ttitre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 9",
+	          		"legendeImage" : "Legende 9",
+	          		"titreOeuvre" : "Titre 9",
+	          		"DescriptionOeuvre" : "Desrcripion 9"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 9-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 9-1",
+						"Legende" : "Legende sous-oeuvre 9-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 9-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 9-2",
+						"Legende" : "Legende sous-oeuvre 9-2"
+				  	}
+				}
+			}]
+		},
+		{
+		    "idOeuvre" : "OEUVRE 10",
+		    "coordOeuvre" : "325,1011",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Ttitre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Ttitre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 10",
+	          		"legendeImage" : "Legende 10",
+	          		"titreOeuvre" : "Titre 10",
+	          		"DescriptionOeuvre" : "Desrcripion 10"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 10-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 10-1",
+						"Legende" : "Legende sous-oeuvre 10-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 10-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 10-2",
+						"Legende" : "Legende sous-oeuvre 10-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+	{
+		"idLifi": 7407,
+		"mapNumber": 6,
+		"coordinates": "273,1030",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 11",
+		    "coordOeuvre" : "251,1047",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Ttitre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Ttitre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 11",
+	          		"legendeImage" : "Legende 11",
+	          		"titreOeuvre" : "Titre 11",
+	          		"DescriptionOeuvre" : "Desrcripion 11"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 11-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 11-1",
+						"Legende" : "Legende sous-oeuvre 11-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 11-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 11-2",
+						"Legende" : "Legende sous-oeuvre 11-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 9173,
+		"mapNumber": 7,
+		"coordinates": "472,1219",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 12",
+		    "coordOeuvre" : "472,1246",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Ttitre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Ttitre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 12",
+	          		"legendeImage" : "Legende 12",
+	          		"titreOeuvre" : "Titre 12",
+	          		"DescriptionOeuvre" : "Desrcripion 12"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 12-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 12-1",
+						"Legende" : "Legende sous-oeuvre 12-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 12-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 12-2",
+						"Legende" : "Legende sous-oeuvre 12-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi": "WAITING",
+		"mapNumber": 8,
+		"coordinates": "291,1310",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 13",
+		    "coordOeuvre" : "268,1337",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Ttitre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Ttitre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 13",
+	          		"legendeImage" : "Legende 13",
+	          		"titreOeuvre" : "Titre 13",
+	          		"DescriptionOeuvre" : "Desrcripion 13"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 13-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 13-1",
+						"Legende" : "Legende sous-oeuvre 13-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 13-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 13-2",
+						"Legende" : "Legende sous-oeuvre 13-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 19294,
+		"mapNumber": 9,
+		"coordinates": "745,519",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 14",
+		    "coordOeuvre" : "739,443",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Ttitre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Ttitre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 14",
+	          		"legendeImage" : "Legende 14",
+	          		"titreOeuvre" : "Titre 14",
+	          		"DescriptionOeuvre" : "Desrcripion 14"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 14-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 14-1",
+						"Legende" : "Legende sous-oeuvre 14-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 14-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 14-2",
+						"Legende" : "Legende sous-oeuvre 14-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 16193,
+		"mapNumber": 10,
+		"coordinates": "884,520",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 15",
+		    "coordOeuvre" : "891,537",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Ttitre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Ttitre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 15",
+	          		"legendeImage" : "Legende 15",
+	          		"titreOeuvre" : "Titre 15",
+	          		"DescriptionOeuvre" : "Desrcripion 15"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 15-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 15-1",
+						"Legende" : "Legende sous-oeuvre 15-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 15-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 15-2",
+						"Legende" : "Legende sous-oeuvre 15-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 3230,
+		"mapNumber": 11,
+		"coordinates": "953,511",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 16",
+		    "coordOeuvre" : "953,530",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Ttitre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Ttitre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 16",
+	          		"legendeImage" : "Legende 16",
+	          		"titreOeuvre" : "Titre 16",
+	          		"DescriptionOeuvre" : "Desrcripion 16"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 16-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 16-1",
+						"Legende" : "Legende sous-oeuvre 16-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 16-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 16-2",
+						"Legende" : "Legende sous-oeuvre 16-2"
+				  	}
+				}
+			}]
+		}]
+	},
+
+
+
+
+
+
+
+
+
+
+	{
+		"idLifi": 7623,
+		"mapNumber": 12,
+		"coordinates": "1094,491",
+		"etage": 1,
+		"parcours": [
+		{
+			"parcoursType":"per"
+		},
+		{
+			"parcoursType":"fast"
+		},
+		{
+			"parcoursType":"free"
+		},
+		{
+			"parcoursType":"scol"
+		}],
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 17",
+		    "coordOeuvre" : "1100,513",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Ttitre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Ttitre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 17",
+	          		"legendeImage" : "Legende 17",
+	          		"titreOeuvre" : "Titre 17",
+	          		"DescriptionOeuvre" : "Desrcripion 17"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 17-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 17-1",
+						"Legende" : "Legende sous-oeuvre 17-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 17-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 17-2",
+						"Legende" : "Legende sous-oeuvre 17-2"
+				  	}
+				}
+			}]
+		},
+		{
+		    "idOeuvre" : "OEUVRE 18",
+		    "coordOeuvre" : "1121,530",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Ttitre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Ttitre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 18",
+	          		"legendeImage" : "Legende 18",
+	          		"titreOeuvre" : "Titre 18",
+	          		"DescriptionOeuvre" : "Desrcripion 18"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 18-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 18-1",
+						"Legende" : "Legende sous-oeuvre 18-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 18-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 18-2",
+						"Legende" : "Legende sous-oeuvre 18-2"
+				  	}
+				}
+			}]
+		}]
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ]}

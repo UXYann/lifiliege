@@ -1,0 +1,97 @@
+================ BORNES LIFI ================
+
+CHANGEMENTS /
+
+. La borne 4 à un ID
+. La borne 10 existe et a un ID
+. La borne 14 (étage 1) est supprimée.
+. La borne 18 existe et a un ID
+. La borne 30 a un ID
+. La borne 29 a 2 ID possibles : '14083' ou '3575' ?
+. Les bornes 31, 33, 35, 53 on changé d'ID
+. La borne 34 a un ID
+. La borne 36 a un ID
+. Les bornes 51 et 52 on un ID
+. Les bornes 64, 65, 66, 67, 68, 69, 70 et 71 n'existent pas ?
+
+
+MANQUES /
+
+. Les bornes 39, 55
+
+
+================ FAIT ================
+MAP / 
+
+1. lister les hotspot provenant du json, via la méthod initcoordonates, via le parcours dans cookie
+2. renvoyer vers vue détail ou vue projets si réception d'un idLifi. Si une seule oeuvre, enregistrer dans un item de hotspotcontroller et redirection vers vue detail. Voir ondataupdated.
+
+TOOLS /
+
+1. Couleur sur le langage courant. Si validation sans séléction, renvoie sur la page courante avec même langage. Manque le texte du bouton valider. Voir la méthode checkLang comme sur les autres vues.
+
+GENERAL / 
+
+1. manque Bind au click bouton plan. (utiliser this.controller.setCurrent(MAP_ID) lors du bind);
+
+
+
+
+============= A FAIRE ================
+
+
+WORKS /
+
+1.récupérer les data en oncurrentupdated, mais aussi en ondataupdated( détection changement de spot quand on est sur cette page).
++ enregister la data d'une oeuvre voulue dans item de hotspotcontroller au click d'une oeuvres
+
+DETAIL /
+
+1. récupérer les données. Complexité 2 cas : 
+ - DataUpdated : qui renvoie vers la fiche des nouveaux projets, ou qui renvoie sur la même page si un seul projet à montrer sur le nouveau lifi
+ - onCurrentUpdated : données depuis l'item cliqué sur la vue Works, ou depuis le lifi si un seul projet ...
+ 
+ ------ edit : Pour répondre à ce problème, j'ai ajouté une variable au controller hotspot, s'appelant item (avec des methodes setItem pour le mettre a jour). En gros l'idée étant que sur la vue des oeuvres, si l'on clique sur l'une des oeuvres, on enregistre l'oeuvre clique dans cet item, comme cela on peut récupérer la bonne oeuvre cliqué quand on est dans la vue détail. (CF System fait pour la redirection depuis la map onDataUpdated)s
+
+MAP / 
+
+1 Système de click sur elements deja vu a revoir. Au click il faudra voir si cet element la possède une ou plusieurs oeuvres, et si c'est une, on enregistre dans item et on redirige vers detail, si c'est plusieurs alors on redirige vers la vue des oeuvres 
+
+
+NAVIGATION BAR / 
+
+1. bouton back du navigation bar d'android pas géré. Lors de la récupération de l'événement, utiliser goprevious du contrôleur général
+
+
+
+============ A VERIFIER ==============
+
+MAP / 
+
+1. vérifier fonctionnement des click sur ancien lifi, et conséquences. 
+2. vérifier le fonctionnement de l'arrivée sur la map sans idLifi reçu. Si bug, voir addspotlight
+
+
+
+============== FEATURES ==============
+ 
+1. Images "3D"
+2. Différentes parcours clients selon type de parcours
+3. Transition autre entre les pages, voir mainContentTransitionView et son parent MainContentView
+4. Autres il me semble
+
+
+
+============= REMARQUES ==============
+
+IMPORTANT : Ne pas oublier de modifier l'url utilisé dans scripts.js pour ce qui est de la récupération du code lifi. + Ajouter Lib Oledcom
+(Si problème de build, ajouter la lib dans android après avoir build l'appli, pas avant ... a voir ahah)
+
+
+
+
+=========== PERFORMANCES =============
+
+1. Revoir MVC peut être, par exemple, hotSpot et Main sont sensiblement les mêmes controleurs, peut être les unifier, ou voir ce qui est réellement utile.
+2. Différentes tailles d'images pour la détail view ? Une petite, et une grande chargé dynamiquement en modifiant l'url du src lors du zoom ?
+3. Pour l'internationalization; apparemment la fonction eval() est evil ..... peut être voir si il n'y a pas quelque chose de plus simple

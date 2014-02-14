@@ -1,0 +1,94 @@
+{"Lifi" : [
+	{
+		"idLifi" : 4996,
+		"mapNumber": 1,
+		"coordinates": "506,489",
+		"etage": 1,
+		"parcours": {
+			"parcoursType":"chronologique"
+		},
+		"oeuvre" : [
+		{
+		    "idOeuvre" : "OEUVRE 1",
+		    "coordOeuvre" : "451,485",
+			"images" : { 
+				"srcImage":"GC.ADC.SEY-01.jpg",
+				"srcImage":"GC.ADC.SEY-01.jpg"
+			},  
+			"textes" : {
+				"FR" : {
+			  		"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Ttitre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+				},
+	      		"EN" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	},
+	          	"NED" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	},
+	          	"DEU" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	},
+	          	"FR-CHILD" : {
+			  		"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Ttitre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+				},
+	      		"EN-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	},
+	          	"NED-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	},
+	          	"DEU-CHILD" : {
+					"chapeauOeuvre" : "Chapo 1",
+	          		"legendeImage" : "Legende 1",
+	          		"titreOeuvre" : "Titre 1",
+	          		"DescriptionOeuvre" : "Desrcripion 1"
+	          	}
+			},
+			"sousOeuvres": [
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 1-1",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 1-1",
+						"Legende" : "Legende sous-oeuvre 1-1"
+				  	}
+				}
+			},
+			{
+			    "idSousOeuvre" : "SOUS-OEUVRE 1-2",
+	 			"srcImage" : "GC.ADC.SEY-01.jpg",
+				"details" : {
+					"FR" : {
+						"Descriptif" : "Description sous-oeuvre 1-2",
+						"Legende" : "Legende sous-oeuvre 1-2"
+				  	}
+				}
+			}]
+		}]
+	}
+
+
+
+ ]}

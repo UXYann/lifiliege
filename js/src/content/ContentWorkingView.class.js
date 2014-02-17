@@ -5,11 +5,13 @@ function ContentWorkingView(){
 ContentWorkingView.prototype = new MainContentSmoothyView();
 
 ContentWorkingView.prototype.init = function(tag){
+    console.log("ContentWorkingView.prototype.init = function(tag)");
     MainContentView.prototype.init.call(this, tag);
 	this.tag = jQuery(tag);
 };
 
 ContentWorkingView.prototype.onCurrentUpdated = function(){
+    console.log("ContentWorkingView.prototype.onCurrentUpdated = function()");
     MainContentView.prototype.onCurrentUpdated.call(this);
 
     if(this.controller.model.current == this.id){
@@ -20,6 +22,7 @@ ContentWorkingView.prototype.onCurrentUpdated = function(){
 };
 
 ContentWorkingView.prototype.enableView = function(){
+    console.log("ContentWorkingView.prototype.enableView = function()");
     this.checkLang();
     this.keyWords();
     window.setTimeout(this.popUp, 200);
@@ -28,14 +31,17 @@ ContentWorkingView.prototype.enableView = function(){
 
 
 ContentWorkingView.prototype.disableView = function(){
+    console.log("ContentWorkingView.prototype.disableView = function()");
     jQuery('#lifiNext').unbind('mousedown', jQuery.proxy(this.onClick, this));  
 };
 
 ContentWorkingView.prototype.onClick = function(){
+    console.log("ContentWorkingView.prototype.onClick = function()");
     this.controller.setCurrent(Repository.MAP_ID);
 };
 
 ContentWorkingView.prototype.checkLang = function(){
+    console.log("ContentWorkingView.prototype.checkLang = function()");
 //    var lang = Cookie.getCookie('lang.curtius.com');
     var lang = globalLangVar;
     // Lifi Explanation
@@ -90,6 +96,7 @@ ContentWorkingView.prototype.checkLang = function(){
 };
 
 ContentWorkingView.prototype.keyWords = function(){
+    console.log("ContentWorkingView.prototype.keyWords = function()");
     //var lang = Cookie.getCookie('lang.curtius.com');
     $('.keywordPopup').remove();
     var lang = globalLangVar;
@@ -114,6 +121,7 @@ ContentWorkingView.prototype.keyWords = function(){
 };
 
 ContentWorkingView.prototype.popUp = function(){
+    console.log("ContentWorkingView.prototype.popUp = function()");
     $('.open-popup-link').magnificPopup({
       type:'inline',
       removalDelay: 300,

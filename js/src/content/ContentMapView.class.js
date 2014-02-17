@@ -9,6 +9,7 @@ function ContentMapView(){
 ContentMapView.prototype = new MainContentSmoothyView();
 
 ContentMapView.prototype.init = function(tag){
+	console.log("ContentMapView.prototype.init = function(tag)");
 	MainContentView.prototype.init.call(this, tag);
 	//dom/var
 	this.tag = jQuery(tag);
@@ -33,6 +34,7 @@ ContentMapView.prototype.init = function(tag){
 
 
 ContentMapView.prototype.onCurrentUpdated = function(){
+	console.log("ContentMapView.prototype.onCurrentUpdated = function()");
 	MainContentView.prototype.onCurrentUpdated.call(this);
 	if(this.controller.model.current == this.id){
 	    this.checkLang();
@@ -44,6 +46,7 @@ ContentMapView.prototype.onCurrentUpdated = function(){
 };
 
 ContentMapView.prototype.enableView = function(){
+	console.log("ContentMapView.prototype.enableView = function()");
 	this.initCoordonates();
 	//this.populateMapRDC();
 	window.setTimeout(jQuery.proxy(this.addingSpotLights, this), 100);
@@ -54,6 +57,7 @@ ContentMapView.prototype.enableView = function(){
 };
 
 ContentMapView.prototype.disableView = function(){
+	console.log("ContentMapView.prototype.disableView = function()");
 	window.clearTimeout(jQuery.proxy(this.addingSpotLights, this), 100);
 	this.removeClicksFeatures();
 	window.clearTimeout(jQuery.proxy(this.localize,this), 250);
@@ -66,6 +70,7 @@ ContentMapView.prototype.disableView = function(){
 */
 //ondataupdated : quand les données du lifi on changé
 ContentMapView.prototype.onDataUpdated = function(){
+	console.log("ContentMapView.prototype.onDataUpdated = function()");
 	//Récupération de la data courante pour évaluer la position courante
 	this.currentPositionData = this.hotSpotController.model.current;
 	//Si nous sommes actuellement sur la vue map et seulement dans ce cas alors
@@ -99,6 +104,7 @@ ContentMapView.prototype.onDataUpdated = function(){
 };
 
 ContentMapView.prototype.checkStage = function(){
+	console.log("ContentMapView.prototype.checkStage = function()");
 	if(this.lastPositionData != ""){
 		if(this.lastPositionData["etage"] == 0){
 			jQuery("#level1").mousedown();
@@ -113,6 +119,7 @@ ContentMapView.prototype.checkStage = function(){
 };
 
 ContentMapView.prototype.populateMapRDC = function() {
+	console.log("ContentMapView.prototype.populateMapRDC = function()");
 	if(this.coordRDC.length != 0){
 	    for (var i = 1; i < this.coordRDC.length; i++) {
 	        //jQuery('.landmarks').append('<div class="item mark"data-position="'+this.coordRDC[ i ]+'" data-show-at-zoom="0"><div lass="lifiPointHolder" id="Lampe'+i+'"><div class="lifiPoint">'+i+'</div></div></div>');
@@ -124,6 +131,7 @@ ContentMapView.prototype.populateMapRDC = function() {
 };
 
 ContentMapView.prototype.populateMap1 = function(){
+	console.log("ContentMapView.prototype.populateMap1 = function()");
 //	console.info('ContentMapView.prototype.populateMap1');
 	var floor1Num = "";
 	if(this.coord1.length != 0){	
@@ -138,6 +146,7 @@ ContentMapView.prototype.populateMap1 = function(){
 };
 
 ContentMapView.prototype.populateMap2 = function(){	
+	console.log("ContentMapView.prototype.populateMap2 = function()");
 // 	console.info('ContentMapView.prototype.populateMap2');
 	var floor2Num = "";
 	if(this.coord2.length != 0){
@@ -153,12 +162,15 @@ ContentMapView.prototype.populateMap2 = function(){
 
 
 ContentMapView.prototype.addingSpotLights = function() {
+	console.log("ContentMapView.prototype.addingSpotLights = function()");
 	var markcount = jQuery('.landmarks').find(".mark").length;
     //Si il y a plusieurs marks, alors on affiche et positionne
     if(markcount.length =! 0) {
         if(this.lastPositionData != ""){
 
      		var currentLifiLampNumberOnMap = "";
+
+    		
      		//	A quel étage sommes nous ?
      		if(this.lastPositionData['mapNumber'] < 28) {
      			//	1er étage
@@ -169,6 +181,8 @@ ContentMapView.prototype.addingSpotLights = function() {
      			currentLifiLampNumberOnMap = (this.lastPositionData['mapNumber'] - 27);
      		}
 
+
+//currentLifiLampNumberOnMap = this.lastPositionData['mapNumber'];
 
         	jQuery('.landmarks').find(".mark:nth-child("+currentLifiLampNumberOnMap+")").addClass("currentLifiPoint");
 	        jQuery('.currentLifiPoint').css('z-index','10000000000000');
@@ -192,6 +206,7 @@ ContentMapView.prototype.addingSpotLights = function() {
 };
 
 ContentMapView.prototype.localize = function () {
+	console.log("ContentMapView.prototype.localize = function ()");
 	// console.info('ContentMapView.prototype.localize');
     this.zoomContainer.smoothZoom('focusTo',{
         x: this.positionArray[0],
@@ -203,6 +218,7 @@ ContentMapView.prototype.localize = function () {
 };
 
 ContentMapView.prototype.displayingMap = function() {
+	console.log("ContentMapView.prototype.displayingMap = function()");
 	// console.info('ContentMapView.prototype.displayingMap');
     this.zoomContainer.smoothZoom('destroy').css('background-image', 'url(zoom_assets/preloader.gif)').smoothZoom({
         image_url: 'img/lvl0.png',
@@ -221,42 +237,21 @@ ContentMapView.prototype.displayingMap = function() {
     
 
 ContentMapView.prototype.addingSpotInteraction = function() {
+	console.log("ContentMapView.prototype.addingSpotInteraction = function()");
 	// console.info('ContentMapView.prototype.addingSpotInteraction');
 	jQuery('.visitedLifiPoint, .currentLifiPoint').bind('mousedown',jQuery.proxy(this.onSpotMouseDown, this));
 
 
 };
-/*
+
 ContentMapView.prototype.onSpotMouseDown = function(e){
-
-    if(this.hotSpotController.model.current) {
-        if(this.hotSpotController.model.current['oeuvre'].length > 1){
-
-        	console.log('There are severals');
-            this.controller.setCurrent(Repository.WORKS_ID);
-
-        } else {
-        	console.log('There is only ONE');
-			var allText = e.toElement.parentNode.id;
-		    var allTextArray = allText.split("Lampe");
-		    var currentValue = allTextArray[1];
-        //	
-			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
-		//
-
-			this.controller.setCurrent(Repository.DETAIL_ID);
-		}
-	}
-};
-*/
-ContentMapView.prototype.onSpotMouseDown = function(e){
-
-        	console.log('There is only ONE');
-			var allText = e.toElement.parentNode.id;
-		    var allTextArray = allText.split("Lampe");
-		    var currentValue = allTextArray[1];
-        //	
-			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+	console.log("ContentMapView.prototype.onSpotMouseDown = function(e)");
+	var allText = e.toElement.parentNode.id;
+    var allTextArray = allText.split("Lampe");
+    var currentValue = allTextArray[1];
+//	
+	//parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+	parsingJsonFileFromMapNumber(currentValue);
 };
 
 
@@ -265,6 +260,7 @@ ContentMapView.prototype.onSpotMouseDown = function(e){
 
 
 ContentMapView.prototype.removeClicksFeatures = function(){
+	console.log("ContentMapView.prototype.removeClicksFeatures = function()");
 	jQuery("#level1").unbind('mousedown', jQuery.proxy(this.onClickFeatures, this));
 	jQuery("#level2").unbind('mousedown', jQuery.proxy(this.onClickFeatures, this));
 	jQuery("#level3").unbind('mousedown', jQuery.proxy(this.onClickFeatures, this));
@@ -272,6 +268,7 @@ ContentMapView.prototype.removeClicksFeatures = function(){
 };
 
 ContentMapView.prototype.addingClicksFeatures = function() {
+	console.log("ContentMapView.prototype.addingClicksFeatures = function()");
 	// console.info('ContentMapView.prototype.addingClicksFeatures')
 	jQuery("#level1").bind('mousedown', jQuery.proxy(this.onClickFeatures, this));
 	jQuery("#level2").bind('mousedown', jQuery.proxy(this.onClickFeatures, this));
@@ -285,12 +282,13 @@ ContentMapView.prototype.addingClicksFeatures = function() {
 };
 
 ContentMapView.prototype.onClickTools = function(){
+	console.log("ContentMapView.prototype.onClickTools = function()");
 	this.controller.setHistoryId(Repository.MAP_ID);
 	this.controller.setCurrent(Repository.TOOLS_ID);
 };
 
 ContentMapView.prototype.onClickSpot = function(){
-
+	console.log("ContentMapView.prototype.onClickSpot = function()");
 	// this.controller.setCurrent(Repository.WORKS_ID);
     if(this.hotSpotController.model.current) {
         if(this.hotSpotController.model.current['oeuvre'].length > 1){
@@ -302,7 +300,8 @@ ContentMapView.prototype.onClickSpot = function(){
 		    var allTextArray = allText.split("Lampe");
 		    var currentValue = allTextArray[1];
         //	
-			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+			//parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+			parsingJsonFileFromMapNumber(currentValue);
 		//
 
 			this.controller.setCurrent(Repository.DETAIL_ID);
@@ -324,6 +323,7 @@ ContentMapView.prototype.onClickSpot = function(){
 };
 
 ContentMapView.prototype.onClickFeatures = function(e){
+	console.log("ContentMapView.prototype.onClickFeatures = function(e)");
 	switch(jQuery(e.currentTarget).attr('id')){
 		case 'level1':
 			this.zoomContainer.smoothZoom('destroy').css('background-image', 'url(zoom_assets/preloader.gif)').smoothZoom({ 
@@ -407,6 +407,7 @@ ContentMapView.prototype.onClickFeatures = function(e){
 };
 
 ContentMapView.prototype.destroyCoordonates = function(){
+	console.log("ContentMapView.prototype.destroyCoordonates = function()");
 	this.coordRDC = [];
 	this.coord1 = [];
 	this.coord2 = [];
@@ -414,7 +415,7 @@ ContentMapView.prototype.destroyCoordonates = function(){
 
 
 ContentMapView.prototype.initCoordonates = function(){
-
+	console.log("ContentMapView.prototype.initCoordonates = function()");
 	//Cookie.setCookie('visit.curtius.com','per','365');
 //	var visit = Cookie.getCookie('visit.curtius.com');
 	var visit = globalVisitVar;
@@ -462,6 +463,7 @@ ContentMapView.prototype.initCoordonates = function(){
 };
 
 ContentMapView.prototype.checkLang = function(){
+	console.log("ContentMapView.prototype.checkLang = function()");
 	//var lang = Cookie.getCookie('lang.curtius.com');
 	var lang = globalLangVar;
     if(lang == "fr") {

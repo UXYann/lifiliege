@@ -5,12 +5,14 @@ function ContentLangageView(){
 ContentLangageView.prototype = new MainContentSmoothyView();
 
 ContentLangageView.prototype.init = function(tag){
+	console.log("ContentLangageView.prototype.init = function(tag)");
 	MainContentView.prototype.init.call(this, tag);
 	this.tag = jQuery(tag);
 	this.listButtons = jQuery(".langs .chooseSquare .lang");	
 };
 
 ContentLangageView.prototype.onCurrentUpdated = function(){
+	console.log("ContentLangageView.prototype.onCurrentUpdated = function()");
 	MainContentView.prototype.onCurrentUpdated.call(this);
 	if(this.controller.model.current == this.id){
 		this.enableView();
@@ -20,15 +22,18 @@ ContentLangageView.prototype.onCurrentUpdated = function(){
 };
 
 ContentLangageView.prototype.enableView = function(){
+	console.log("ContentLangageView.prototype.enableView = function()");
 //events
 	this.listButtons.bind('mousedown', jQuery.proxy(this.onClick, this));
 };
 
 ContentLangageView.prototype.disableView = function(){
+	console.log("ContentLangageView.prototype.disableView = function()");
 	this.listButtons.unbind('mousedown', jQuery.proxy(this.onClick, this));
 };
 
 ContentLangageView.prototype.onClick = function(e){
+	console.log("ContentLangageView.prototype.onClick = function(e)");
 	switch(jQuery(e.currentTarget).attr('id')){
 		case 'fr':
 			//Cookie.setCookie('lang.curtius.com','fr','365');

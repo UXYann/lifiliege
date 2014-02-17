@@ -5,6 +5,7 @@ function ContentVisitView(){
 ContentVisitView.prototype = new MainContentSmoothyView();
 
 ContentVisitView.prototype.init = function(tag){
+	console.log("ContentVisitView.prototype.init = function(tag)");
 	MainContentView.prototype.init.call(this, tag);
 	this.tag = jQuery(tag);
 	this.listButtons = jQuery("#visits .chooseSquare .visit");
@@ -13,6 +14,7 @@ ContentVisitView.prototype.init = function(tag){
 };
 
 ContentVisitView.prototype.onClick = function(e){
+	console.log("ContentVisitView.prototype.onClick = function(e)");
 	switch(jQuery(e.currentTarget).attr('id')){
 		case 'free':
 			globalVisitVar = "free";
@@ -35,6 +37,7 @@ ContentVisitView.prototype.onClick = function(e){
 };
 
 ContentVisitView.prototype.onCurrentUpdated = function(){
+	console.log("ContentVisitView.prototype.onCurrentUpdated = function()");
 	MainContentView.prototype.onCurrentUpdated.call(this);
 	if(this.controller.model.current == this.id){	
 		this.checkLang();
@@ -45,20 +48,24 @@ ContentVisitView.prototype.onCurrentUpdated = function(){
 };
 
 ContentVisitView.prototype.enableView = function(){
+	console.log("ContentVisitView.prototype.enableView = function()");
 		this.listButtons.bind('mousedown', jQuery.proxy(this.onClick, this));
 		jQuery('#backBtn').bind('mousedown', jQuery.proxy(this.onClickBack, this));
 };
 
 ContentVisitView.prototype.disableView = function(){
+	console.log("ContentVisitView.prototype.disableView = function()");
 		this.listButtons.unbind('mousedown', jQuery.proxy(this.onClick, this));
 		jQuery('#backBtn').unbind('mousedown', jQuery.proxy(this.onClickBack, this));
 };
 
 ContentVisitView.prototype.onClickBack = function(){
+	 console.log("ContentVisitView.prototype.onClickBack = function()");
 	this.controller.goPrevious();
 };
 
 ContentVisitView.prototype.checkLang = function(){
+	console.log("ContentVisitView.prototype.checkLang = function()");
 	//var lang = Cookie.getCookie('lang.curtius.com');
 	/*$('#free').html(eval('Internationalization.VisitBtnFree'+lang));
     $('#fast').html(eval('Internationalization.VisitBtnFast'+lang));

@@ -6,8 +6,8 @@ MainContentController.prototype = new MainController();
 
 MainContentController.instance = "";
 
-MainContentController.getInstance = function()
-{
+MainContentController.getInstance = function() {
+	console.log("MainContentController.getInstance = function()");
 	if (MainContentController.instance == "")
 	{
 		var instance = new MainContentController();

@@ -5,6 +5,7 @@ function ContentWorksView(){
 ContentWorksView.prototype = new MainContentSmoothyView();
 
 ContentWorksView.prototype.init = function(tag){
+	console.log("ContentWorksView.prototype.init = function(tag)");
 	MainContentView.prototype.init.call(this, tag);
 	this.tag = jQuery(tag);
 		
@@ -13,6 +14,7 @@ ContentWorksView.prototype.init = function(tag){
 
 //on currentUpdated : quand notre vue s'affiche
 ContentWorksView.prototype.onCurrentUpdated = function(){
+	console.log("ContentWorksView.prototype.onCurrentUpdated = function()");
 	MainContentView.prototype.onCurrentUpdated.call(this);
 	if(this.controller.model.current == this.id){
 		this.checkLang();
@@ -26,6 +28,7 @@ ContentWorksView.prototype.onCurrentUpdated = function(){
 
 //ondataupdated : quand les données du lifi on changé
 ContentWorksView.prototype.onDataUpdated = function(){
+	console.log("ContentWorksView.prototype.onDataUpdated = function()");
 
 	//Encore un peu de mal avec le parcours, est-ce que l'on veut changer de vue si jamais les données du lifi
 	// ont changé et que l'on est sur cette page ? 
@@ -36,6 +39,7 @@ ContentWorksView.prototype.onDataUpdated = function(){
 }
 
 ContentWorksView.prototype.enableView = function(){
+	console.log("ContentWorksView.prototype.enableView = function()");
 	jQuery('.spacerTd').first().remove();
 	//enable events
 	jQuery('#artworksinfos').bind('mousedown', jQuery.proxy(this.onClickTools, this));
@@ -48,10 +52,9 @@ ContentWorksView.prototype.enableView = function(){
 
 
 ContentWorksView.prototype.displayItems = function(){
-//	alert ('id Lifi : ' + this.hotSpotController.model.current.idLifi + 
-//		'Nombres oeuvres : ' + this.hotSpotController.model.current['oeuvre'].length);
+	console.log("ContentWorksView.prototype.displayItems = function()");
 
-	console.log('id Lifi : ' + this.hotSpotController.model.current.idLifi + 'Nombres oeuvres : ' + this.hotSpotController.model.current['oeuvre'].length);
+//	console.log('id Lifi : ' + this.hotSpotController.model.current.idLifi + 'Nombres oeuvres : ' + this.hotSpotController.model.current['oeuvre'].length);
 
 	if(this.hotSpotController.model.current['oeuvre'].length > 1) {
 		
@@ -60,50 +63,44 @@ ContentWorksView.prototype.displayItems = function(){
 
 		var currentArtWorkItem = "";
 		for (var i = 0; i < this.hotSpotController.model.current['oeuvre'].length ; i++) {
-			currentArtWorkItem += "<span class='severalArtWorksItems'><img src='img/artwork/"+this.hotSpotController.model.current['oeuvre'][i]['image']+"' alt='' />";
+/*			
+			console.log('---------------------------------------------------');
+			console.log("this.hotSpotController.model.current['oeuvre'][i]");
+			console.log(this.hotSpotController.model.current['oeuvre'][i]);
+			console.log("this.hotSpotController.model.current['oeuvre'][i]");
+			console.log('---------------------------------------------------');
+*/
+ 			currentArtWorkItem += "<span class='severalArtWorksItems'><img src='img/artwork/"+this.hotSpotController.model.current['oeuvre'][i]['image']+"' class='specificAndMultipe' id='"+this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']+"' alt='' />";
 			currentArtWorkItem += "<br/>";
 			currentArtWorkItem += "<span>"+this.hotSpotController.model.current['oeuvre'][i]['textes']['FR']['titreOeuvre']+"</span>";
 			currentArtWorkItem += "</span>";
 //
-		jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']));
-//
-//
+		//this.hotSpotController.setItem(this.hotSpotController.model.current['oeuvre'][i]);
+		//jQuery('.specificAndMultipe').bind('mousedown', console.log('YANN'));
 
-
+//		jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']));
+//		jQuery('.specificAndMultipe').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']));
+//
 		}
-		currentContainer.append(currentArtWorkItem);
 
+		jQuery('.specificAndMultipe').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.setItem(this.hotSpotController.model.current['oeuvre'][i])));
+
+		currentContainer.append(currentArtWorkItem);
+		//this.controller.setCurrent(Repository.WORKS_ID);
 
 	} else {
 				
 		this.hotSpotController.setItem(this.hotSpotController.model.current['oeuvre']);
 
-		this.controller.setCurrent(Repository.DETAIL_ID);	
-		//this.controller.setCurrent(Repository.WORKS_ID);
+		this.controller.setCurrent(Repository.DETAIL_ID);
 	}
 
 };
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ContentWorksView.prototype.disableView = function(){
+	console.log("ContentWorksView.prototype.disableView = function()");
 	//disable events
 	jQuery('#artworksinfos').unbind('mousedown', jQuery.proxy(this.onClickTools, this));
 	jQuery('.slideBGArtworks img').unbind('mousedown', jQuery.proxy(this.onClickWork, this));
@@ -125,18 +122,47 @@ ContentWorksView.prototype.disableView = function(){
 
 
 ContentWorksView.prototype.onClickTools = function(){
+	console.log("ContentWorksView.prototype.onClickTools = function()");
 	this.controller.setHistoryId(Repository.WORKS_ID);
 	this.controller.setCurrent(Repository.TOOLS_ID);
 };
 
 ContentWorksView.prototype.onClickWork = function(tag){
+	console.log("ContentWorksView.prototype.onClickWork = function(tag)");
+/*	
+	console.log("$('#'tag.target.id");
+	console.log(tag.target.id);
+	console.log("$('#'tag.target.id");
+*/
+	for (var i = 0; i < jQuery(hotSpotController.model.scope).length; i++) {
+    	
+    	if(hotSpotController.model.scope[i] != undefined){
+
+    		if(hotSpotController.model.scope[i]['oeuvre'].length > 1) {
+    			for (var j = 0; j < hotSpotController.model.scope[i]['oeuvre'].length; j++) {
+
+		        	if(hotSpotController.model.scope[i]['oeuvre'][j]['idOeuvre'] == tag.target.id){
+
+		        		hotSpotController.setItem(hotSpotController.model.scope[i]['oeuvre'][j]);
+//		        		console.log(hotSpotController.model.scope[i]['oeuvre'][j]);
+
+		        		hotSpotController.setCurrent(Repository.DETAIL_ID);
+		        	} 
+
+    			}
+    		}
+    	}
+    }
+
 	// ON ne bindera plus sur l'image mais sur le contenu généré dans display item via le json
 	// au bind d'un element, il faudra enregistrer la valeur d'une oeuvre dans item de hotspotcontroller, 
 	// et rediriger vers detail view 
+
 	this.controller.setCurrent(Repository.DETAIL_ID);
 };
 
 ContentWorksView.prototype.checkLang = function(){
+	console.log("ContentWorksView.prototype.checkLang = function()");
 	//var lang = Cookie.getCookie('lang.curtius.com');
 	var lang = globalLangVar;
 
@@ -161,10 +187,12 @@ ContentWorksView.prototype.checkLang = function(){
 };
 
 ContentWorksView.prototype.onBackToMap = function() {
+	console.log("ContentWorksView.prototype.onBackToMap = function()");
     this.controller.setCurrent(Repository.MAP_ID);
 };
 
 ContentWorksView.prototype.keyWords = function(){
+	console.log("ContentWorksView.prototype.keyWords = function()");
     //var lang = Cookie.getCookie('lang.curtius.com');
 	$('.keywordPopup').remove();
     var lang = globalLangVar;
@@ -189,6 +217,7 @@ ContentWorksView.prototype.keyWords = function(){
 };
 
 ContentWorksView.prototype.popUp = function(){
+	console.log("ContentWorksView.prototype.popUp = function()");
     $('.open-popup-link').magnificPopup({
       type:'inline',
       removalDelay: 300,

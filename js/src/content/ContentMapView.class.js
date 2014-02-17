@@ -70,6 +70,7 @@ ContentMapView.prototype.onDataUpdated = function(){
 	this.currentPositionData = this.hotSpotController.model.current;
 	//Si nous sommes actuellement sur la vue map et seulement dans ce cas alors
 	//Renvoie sur une page selon le type de contenu
+
 	if(this.controller.model.current == this.id){
 		if(this.hotSpotController.model.current['oeuvre'].length > 1){
 			this.controller.setCurrent(Repository.WORKS_ID);
@@ -126,10 +127,8 @@ ContentMapView.prototype.populateMap1 = function(){
 //	console.info('ContentMapView.prototype.populateMap1');
 	var floor1Num = "";
 	if(this.coord1.length != 0){	
-		console.log(this.coord1.length);
 	    for (var i = 1; i < this.coord1.length; i++) {
 	        floor1Num = i+parseInt(this.coordRDC.length)-1;
-	        console.log(floor1Num);
 	        //jQuery('.landmarks').append('<div class="item mark" data-position="'+this.coord1[ i ]+'" data-show-at-zoom="0"><div lass="lifiPointHolder" id="Lampe'+floor1Num+'"><div class="lifiPoint">'+floor1Num+'</div></div></div>');
 			jQuery('.landmarks').append('<div class="item mark" data-position="'+this.coord1[ i ]+'" data-show-at-zoom="0"><div class="lifiPointHolder" id="Lampe'+floor1Num+'"><div class="lifiPoint"></div></div></div>');	        
 	    }	
@@ -169,8 +168,6 @@ ContentMapView.prototype.addingSpotLights = function() {
      			//	2ème étage
      			currentLifiLampNumberOnMap = (this.lastPositionData['mapNumber'] - 27);
      		}
-     		console.log("currentLifiLampNumberOnMap");
-     		console.log(currentLifiLampNumberOnMap);
 
 
         	jQuery('.landmarks').find(".mark:nth-child("+currentLifiLampNumberOnMap+")").addClass("currentLifiPoint");
@@ -178,7 +175,7 @@ ContentMapView.prototype.addingSpotLights = function() {
 	        jQuery('.currentLifiPoint').prevAll('.mark').addClass('visitedLifiPoint');
 	        // Position de la prochaine borne (.nextLifiPoint)
 	        jQuery('.currentLifiPoint').next().addClass('nextLifiPoint');
-	     // Position de la dernière borne consultée (.currentLifiPoint)
+	     	// Position de la dernière borne consultée (.currentLifiPoint)
 	        this.position = (jQuery('.currentLifiPoint').attr('data-position'));
 
 
@@ -227,12 +224,45 @@ ContentMapView.prototype.addingSpotInteraction = function() {
 	// console.info('ContentMapView.prototype.addingSpotInteraction');
 	jQuery('.visitedLifiPoint, .currentLifiPoint').bind('mousedown',jQuery.proxy(this.onSpotMouseDown, this));
 
+
+};
+/*
+ContentMapView.prototype.onSpotMouseDown = function(e){
+
+    if(this.hotSpotController.model.current) {
+        if(this.hotSpotController.model.current['oeuvre'].length > 1){
+
+        	console.log('There are severals');
+            this.controller.setCurrent(Repository.WORKS_ID);
+
+        } else {
+        	console.log('There is only ONE');
+			var allText = e.toElement.parentNode.id;
+		    var allTextArray = allText.split("Lampe");
+		    var currentValue = allTextArray[1];
+        //	
+			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+		//
+
+			this.controller.setCurrent(Repository.DETAIL_ID);
+		}
+	}
+};
+*/
+ContentMapView.prototype.onSpotMouseDown = function(e){
+
+        	console.log('There is only ONE');
+			var allText = e.toElement.parentNode.id;
+		    var allTextArray = allText.split("Lampe");
+		    var currentValue = allTextArray[1];
+        //	
+			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
 };
 
-ContentMapView.prototype.onSpotMouseDown = function(){
-	// console.info('ContentMapView.prototype.onSpotMouseDown');
-	this.controller.setCurrent(Repository.WORKS_ID);
-};
+
+
+
+
 
 ContentMapView.prototype.removeClicksFeatures = function(){
 	jQuery("#level1").unbind('mousedown', jQuery.proxy(this.onClickFeatures, this));
@@ -260,6 +290,27 @@ ContentMapView.prototype.onClickTools = function(){
 };
 
 ContentMapView.prototype.onClickSpot = function(){
+
+	// this.controller.setCurrent(Repository.WORKS_ID);
+    if(this.hotSpotController.model.current) {
+        if(this.hotSpotController.model.current['oeuvre'].length > 1){
+
+            this.controller.setCurrent(Repository.WORKS_ID);
+
+        } else {
+			var allText = e.toElement.parentNode.id;
+		    var allTextArray = allText.split("Lampe");
+		    var currentValue = allTextArray[1];
+        //	
+			parsingJsonFileFromMapNumber(currentValue,browsingJsonToFindLIFIID);
+		//
+
+			this.controller.setCurrent(Repository.DETAIL_ID);
+		}
+	}
+
+
+	/*
 	jQuery.getJSON('data.json', function(data) {
         $.each( data, function( key, val ) {
             console.log(data[0]);
@@ -269,6 +320,7 @@ ContentMapView.prototype.onClickSpot = function(){
             console.log(val.Oeuvre[0].FichierImage);
         });
     });
+*/
 };
 
 ContentMapView.prototype.onClickFeatures = function(e){
@@ -406,9 +458,7 @@ ContentMapView.prototype.initCoordonates = function(){
 		}
 
 	}
-	console.log(itemCoordRDC);
-	console.log(itemCoord1);
-	console.log(itemCoord2)
+
 };
 
 ContentMapView.prototype.checkLang = function(){

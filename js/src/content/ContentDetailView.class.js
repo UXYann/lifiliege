@@ -269,35 +269,42 @@ ContentDetailView.prototype.onClickedLinkedArt = function(){
 };
 
 ContentDetailView.prototype.displayingArtImage = function() {
-        //
 
-        console.log('we should set an image');
-        var artWork;
-        if(this.hotSpotController.model.current) {
-            artWork = "img/artwork/" + this.hotSpotController.model.current['oeuvre'][0]['image'];
+    if(this.hotSpotController.model.current) {
+        if(this.hotSpotController.model.current['oeuvre'].length > 1){
+
+            this.controller.setCurrent(Repository.WORKS_ID);
+
         } else {
-        //    artWork = "img/oeuvre.jpg";
-        artWork = "";
+
+            this.hotSpotController.setItem(this.hotSpotController.model.current['oeuvre']);
+
+            //this.controller.setCurrent(Repository.DETAIL_ID);
+//            $('#oeuvresView').css({'opacity':'0'});
+//            $('#contentDetail').css({'opacity':'1'});
+
+        
+            var artWork;
+            artWork = "img/artwork/" + this.hotSpotController.model.current['oeuvre'][0]['image'];
+            jQuery('#artworkZoom').smoothZoom({ 
+                image_url: artWork,
+                width: 400,
+                height: 525,
+                responsive: false,
+                responsive_maintain_ratio: true,
+                max_WIDTH: '',
+                max_HEIGHT: '',
+                zoom_BUTTONS_SHOW: false,
+                pan_BUTTONS_SHOW: false,
+                zoom_MAX:'150',
+                initial_ZOOM: '0',
+                border_SIZE: 0
+            }); 
+
+          //  jQuery('#artworkZoom').html('<img src="'+artWork+'" id="currentArtWotkBeeingSeen" alt="" style="height: 525px; z-index: 10000000;" />');            
+
         }
-
-        console.log(artWork);
-    jQuery('#artworkZoom').smoothZoom({ 
-        //image_url: 'img/oeuvre.jpg', 
-        image_url: artWork,
-        width: 400,
-        height: 525,
-        responsive: false,
-        responsive_maintain_ratio: true,
-        max_WIDTH: '',
-        max_HEIGHT: '',
-        zoom_BUTTONS_SHOW: false,
-        pan_BUTTONS_SHOW: false,
-        zoom_MAX:'150',
-        initial_ZOOM: '0',
-        border_SIZE: 0
-    }); 
-
-    jQuery('#artworkZoom').html('<img src="'+artWork+'" id="currentArtWotkBeeingSeen" alt="" style="height: 525px; z-index: 10000000;" />');
+    }    
 
 };
 

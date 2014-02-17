@@ -36,7 +36,60 @@
 		console.info('fail');
     });
 
+
     //Récupération du code lifi courant
+/*
+function parsingJsonFileFromMapNumber(currentValue,callback) {
+
+		console.log("from Map Number");
+    	for (var i = 1; i < jQuery(hotSpotController.model.scope).length; i++){
+    	
+    	if(hotSpotController.model.scope[i] != undefined){
+        	if(hotSpotController.model.scope[i].mapNumber == currentValue){
+        		hotSpotController.setCurrent(hotSpotController.model.scope[i]);
+        		console.log(hotSpotController.setCurrent(hotSpotController.model.scope[i]));
+			    callback();
+        		return;
+        	}	
+    	}
+    } 
+}
+*/
+
+function parsingJsonFileFromMapNumber(currentValue,callback) {
+
+		console.log("from Map Number");
+    	for (var i = 1; i < jQuery(hotSpotController.model.scope).length; i++){
+    	
+    	if(hotSpotController.model.scope[i] != undefined){
+        	if(hotSpotController.model.scope[i].mapNumber == currentValue){
+
+        		hotSpotController.setCurrent(hotSpotController.model.scope[i]);
+        		console.log(hotSpotController.setCurrent(hotSpotController.model.scope[i]));
+
+
+			    if(this.hotSpotController.model.current) {
+			        if(this.hotSpotController.model.current['oeuvre'].length > 1){
+
+			        	console.log('There are severals');
+			            hotSpotController.setCurrent(Repository.WORKS_ID);
+
+			        } else {
+			        	console.log('There is only ONE');
+
+						hotSpotController.setCurrent(Repository.DETAIL_ID);
+					}
+				} 
+
+	        		
+			    callback();
+        		return;
+        	}	
+    	}
+    }    
+}
+
+
 
 
 
@@ -44,10 +97,7 @@ function parsingJsonFile(currentValue,callback) {
 
 
     	for (var i = 1; i < jQuery(hotSpotController.model.scope).length; i++){
-    //	for (var i = 1; i < 71; i++) {
 
-		//console.log(hotSpotController.model.scope[i]);
-    	
     	if(hotSpotController.model.scope[i] != undefined){
         	if(hotSpotController.model.scope[i].idLifi == currentValue){
         		hotSpotController.setCurrent(hotSpotController.model.scope[i]);
@@ -58,8 +108,8 @@ function parsingJsonFile(currentValue,callback) {
     } 
 }
 
-var urlFile = '/sdcard/lifiID.txt';
-//var urlFile =  'test/lifiID.txt';
+//var urlFile = '/sdcard/lifiID.txt';
+var urlFile =  'test/lifiID.txt';
 
 var currentLIFIIDToBeChecked = "";
 

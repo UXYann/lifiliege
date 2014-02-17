@@ -45,8 +45,6 @@ var s,
 		init: function() {
 
 
-		console.log(history);
-
 			parsingLinks.settings = {
 				numALinks: $("a").length, 
 				aLinksList: $("a")

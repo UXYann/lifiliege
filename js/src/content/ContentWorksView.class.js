@@ -64,30 +64,22 @@ ContentWorksView.prototype.displayItems = function(){
 			currentArtWorkItem += "<br/>";
 			currentArtWorkItem += "<span>"+this.hotSpotController.model.current['oeuvre'][i]['textes']['FR']['titreOeuvre']+"</span>";
 			currentArtWorkItem += "</span>";
-
-			console.log(this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']);
-
-
-
-
-
-
-
-
-
-
 //
-//		jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']));
+		jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current['oeuvre'][i]['idOeuvre']));
 //
 //
-
-
 
 
 		}
 		currentContainer.append(currentArtWorkItem);
 
 
+	} else {
+				
+		this.hotSpotController.setItem(this.hotSpotController.model.current['oeuvre']);
+
+		this.controller.setCurrent(Repository.DETAIL_ID);	
+		//this.controller.setCurrent(Repository.WORKS_ID);
 	}
 
 };
@@ -120,8 +112,7 @@ ContentWorksView.prototype.disableView = function(){
 
 
 	if(this.hotSpotController.model.current) {
-	console.log("this.hotSpotController.model.current");
-	console.log(this.hotSpotController.model.current);
+
 		jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this));
 		//jQuery('.severalArtWorksContainer').bind('mousedown', jQuery.proxy(this.onClickWork, this.hotSpotController.model.current));	
 	}

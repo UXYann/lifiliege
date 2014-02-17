@@ -15,9 +15,7 @@ HotSpotController.prototype.init = function(){
 
 //current
 HotSpotController.prototype.setCurrent = function(current){
-	console.log("current");
-	console.log(current);
-	console.log("current");
+
 	if(this.model == undefined)
 		return;
 	if(this.model.current !== current)
